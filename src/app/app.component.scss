@@ -1,0 +1,80 @@
+.app-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #b58cff;
+}
+.bpm-display {
+  font-size: 5rem;
+  color: #b58cff;
+  margin: 1rem 0 0.2rem;
+}
+.subtext {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+.slider-container, .bpm-controls, .options, .preset-controls, .setlist-controls {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+input[type=range], input[type=number], select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.round-button {
+  background: linear-gradient(to bottom right, #b58cff, #8e6cff);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+button, select {
+  background: #1e2030;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+.song-list {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #1e2030;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+}
+.beat-visual {
+  width: 20px;
+  height: 20px;
+  background-color: #b58cff;
+  border-radius: 50%;
+  margin-top: 1rem;
+  opacity: 0.3;
+  transition: opacity 0.1s ease-in-out;
+}
+.beat-visual.active {
+  opacity: 1;
+}
